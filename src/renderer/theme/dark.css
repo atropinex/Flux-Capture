@@ -1,0 +1,12 @@
+﻿:root,
+:root[data-theme='dark'] {
+    --bg: #121316;
+    --panel: #1a1c21;
+    --panel-2: #22252b;
+    --border: #2b2f36;
+    --text: #e6e8eb;
+    --muted: #8b919a;
+    --accent: #6c8cff;
+    --danger: #ff5c5c;
+    --island-bg: var(--bg);
+}

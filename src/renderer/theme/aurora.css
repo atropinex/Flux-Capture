@@ -1,0 +1,12 @@
+﻿:root[data-theme='aurora'] {
+    --bg: #0d1517;
+    --panel: rgba(16, 28, 30, 0.8);
+    --panel-2: rgba(28, 46, 48, 0.8);
+    --border: #24413f;
+    --text: #e6f5f2;
+    --muted: #7fa59f;
+    --accent: #4de1b0;
+    --island-bg: radial-gradient(circle at 20% 10%, #1b4d4a 0%, transparent 50%),
+    radial-gradient(circle at 80% 90%, #2a2f6b 0%, transparent 55%),
+    #0d1517;
+}    

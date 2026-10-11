@@ -1,0 +1,10 @@
+﻿:root[data-theme='midnight'] {
+    --bg: #0a0d1a;
+    --panel: #10152a;
+    --panel-2: #172040;
+    --border: #243058;
+    --text: #e8ecff;
+    --muted: #7f8ab5;
+    --accent: #8a6cff;
+    --island-bg: linear-gradient(160deg, #0a0d1a 0%, #131a3a 100%);
+}

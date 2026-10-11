@@ -1,0 +1,34 @@
+﻿.bar {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.titleTxt {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.drag {
+    flex: 1;
+    height: 100%;
+    padding-left: 20px;
+    -webkit-app-region: drag;
+}
+
+.controls {
+    display: flex;
+    gap: 6px;
+    padding-right: 10px;
+    padding-top: 8px;
+    -webkit-app-region: no-drag;
+}
+
+/* Smaller buttons just for the title bar */
+.controls button {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+}
+.controls button svg { width: 16px; height: 16px; }

@@ -1,0 +1,74 @@
+﻿.btn {
+    position: relative;
+    display: grid;
+    place-items: center;
+    background: none;
+    border: none;
+    border-radius: 12px;
+    color: var(--muted);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+.btn:hover { background: var(--panel-2); color: var(--text); }
+
+/* Sizes / variants */
+.nav { width: 44px; height: 44px; }
+.nav svg { width: 22px; height: 22px; }
+
+.control {
+    width: 52px;
+    height: 52px;
+    border: 1px solid var(--border);
+    background: var(--panel-2);
+}
+.control svg { width: 24px; height: 24px; }
+.control:hover { border-color: var(--accent); }
+
+/* States (placed after :hover so they win) */
+.btn.active { background: var(--panel-2); color: var(--accent); }
+.nav.active::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    bottom: 10px;
+    width: 3px;
+    border-radius: 0 3px 3px 0;
+    background: var(--accent);
+}
+
+.btn.danger,
+.btn.danger:hover { color: var(--danger); }
+.control.danger:hover { border-color: var(--danger); }
+
+/* Tooltip */
+.btn::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: #0c0d10;
+    color: var(--text);
+    border: 1px solid var(--border);
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.12s;
+    z-index: 100;
+}
+.btn:hover::after { opacity: 1; transition-delay: 0.3s; }
+
+/* Nav buttons: tooltip opens to the right */
+.nav::after {
+    left: calc(100% + 12px);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Control buttons: tooltip opens above */
+.control::after {
+    left: 50%;
+    bottom: calc(100% + 10px);
+    transform: translateX(-50%);
+}
