@@ -40,29 +40,6 @@ ClipForge is being developed as a desktop application. Its final platform suppor
 * npm
 * Git
 
-### Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/YOUR_USERNAME/ClipForge.git
-cd ClipForge
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start the development environment:
-
-```bash
-npm run dev
-```
-
-> **Note:** The commands above are placeholders for the intended setup. Update them to match the scripts configured in `package.json`.
-
 ## 📁 Project Goals
 
 ClipForge aims to make video capture and editing more accessible by bringing essential media tools into one application.
